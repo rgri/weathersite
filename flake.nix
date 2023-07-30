@@ -18,6 +18,7 @@
         pkgs.nodePackages.npm
         pkgs.nodePackages.rollup
         pkgs.direnv
+        pkgs.nodePackages.http-server
       ];
     };
 
