@@ -1,0 +1,17 @@
+* Setting up the project
+:PROPERTIES:
+:ID:       8ccf2db5-c9b8-49e3-b887-0c97bc0a5b07
+:END:
+1. Install [[https://nixos.org/download.html][nix]]
+2. [[https://direnv.net/docs/installation.html][Install]] and [[https://direnv.net/docs/hook.html][configure]] direnv
+   On mac, if you run into issues, do this:
+   #+begin_src bash
+eval "$(direnv hook $SHELL)"
+   #+end_src
+3. [[https://nixos.wiki/wiki/Flakes#Permanent][Enable flakes]]
+   Add the following to the file =/etc/nix/nix.conf=:
+   #+begin_src nix
+    experimental-features = nix-command flakes
+   #+end_src
+4. Run =direnv allow= in the project root
+   Now, whenever you enter the project root or its subfolders within a shell, all of the packages defined in [[file:flake.nix][flake.nix]] should be available to you.
