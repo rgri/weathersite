@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="weatherApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Weather Site</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <script src="node_modules/chart.js/Chart.min.js"></script>
+        <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-controller="WeatherController">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+            your experience.
+
+            </p>
+        <![endif]-->
+        <nav class="navbar navbar-expand-md bg-success">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Weather Snart</a>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="column">
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-body">
+                            <canvas class="chart chart-line" chart-data="data" chart-labels="xlabellist" chart-options="lineOptions"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
