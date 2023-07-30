@@ -16,6 +16,7 @@
     devShells.default = pkgs.mkShell {
       packages = [
         pkgs.nodePackages.npm
+        pkgs.nodePackages.nodejs
         pkgs.nodePackages.rollup
         pkgs.direnv
         pkgs.nodePackages.http-server
