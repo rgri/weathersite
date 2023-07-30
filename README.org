@@ -15,3 +15,5 @@ eval "$(direnv hook $SHELL)"
    #+end_src
 4. Run =direnv allow= in the project root
    Now, whenever you enter the project root or its subfolders within a shell, all of the packages defined in [[file:flake.nix][flake.nix]] should be available to you.
+5. Run =npm install=
+   This installs all =Node.JS= dependencies for the project.
