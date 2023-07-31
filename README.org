@@ -17,3 +17,9 @@ eval "$(direnv hook $SHELL)"
    Now, whenever you enter the project root or its subfolders within a shell, all of the packages defined in [[file:flake.nix][flake.nix]] should be available to you.
 5. Run =npm install=
    This installs all =Node.JS= dependencies for the project.
+* Running the project
+:PROPERTIES:
+:ID:       4cdf9c46-61ed-442e-b683-d0b14d3f02b3
+:END:
+- at the moment, all node binaries installed through npm must be prefaced with =./node_modules/.bin/BINARYNAME=
+- To serve the project, do some stuff with =ng= (=./node_modules/.bin/ng=)
